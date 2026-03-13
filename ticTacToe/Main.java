@@ -10,8 +10,6 @@ public class Main {
     
     
     public static void main(String[] args) {
-       
-        
         //establish a new TicTacToe instance as the global variable so that this specific game can be used outside the real* main
         newGame = new TicTacToe();
         //etablish Main as an object so i can use the class i created
@@ -22,6 +20,10 @@ public class Main {
             enigma.AskandInput();
         
         }
+        //was trying to make the game restart in the terminal when the game ends
+        //lowkey knew this specific try wasn't gonna work, but tried it to see if it might
+        //too lazy *have too much to do* to finish what i started here,
+        //might try again later
         if (newGame.checkWin() == true) {
             newGame = new TicTacToe();
         }
