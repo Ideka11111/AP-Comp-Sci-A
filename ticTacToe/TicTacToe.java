@@ -34,7 +34,7 @@ public class TicTacToe {
     public void printBoard() {
         //prints the tictactoe array onto the console
         //the board should include numbers that show the rows and columns
-        System.out.println("  0 1 2");
+        System.out.println("  0  1  2");
         System.out.println("0" + muldArray[0][0] + muldArray[0][1] + muldArray[0][2]);
         System.out.println("1" + muldArray[1][0] + muldArray[1][1] + muldArray[1][2]);
         System.out.println("2" + muldArray[2][0] + muldArray[2][1] + muldArray[2][2]);
