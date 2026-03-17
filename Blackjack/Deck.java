@@ -8,7 +8,7 @@ public class Deck {
     private String [] suits = {"Hearts","Diamonds","Clubs","Spades"};
     private int [] numbers = {1,2,3,4,5,6,7,8,9,10,10,10,10};
                             //1,2,3,4,5,6,7,8,9,10,11,12,13
-    private String [] face = {"ace","2","3","4","5","6","7","8","9","10","jack","queen","king"};
+    private String [] face = {"Ace","2","3","4","5","6","7","8","9","10","Jack","Queen","King"};
 
     //ArrayList<Type> arrayListName = new ArrayList<Type>();
     //List<Object> stuff = new ArrayList<Object>();

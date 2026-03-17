@@ -12,11 +12,11 @@ public class Main {
         newDeck = new Deck();
 
         //this is for testing
-        // for (int i = 0; i <52; i++) {
+        for (int i = 0; i <52; i++) {
 
-        //     System.out.println(newDeck.getcardnumber(i) + "    " + newDeck.getcardface(i) + " of " + newDeck.getcardsuit(i));
-        // }
-        printshuffleprint();
+            System.out.println(newDeck.getcardnumber(i) + "    " + newDeck.getcardface(i) + " of " + newDeck.getcardsuit(i) + " " + newDeck.isFaceCard(i));
+        }
+        // printshuffleprint();
 
 
 
