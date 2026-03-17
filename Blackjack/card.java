@@ -29,11 +29,15 @@ public class card {
         return face;
     }
 
-    public String Iswhatsuit() {
+    public String ISwhatsuit() {
         
         return suit;
     }
 
-    
+    public int ISwhatnumber() {
+
+        return number;
+    }
+
 
 }
