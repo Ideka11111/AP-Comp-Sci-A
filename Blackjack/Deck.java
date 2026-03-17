@@ -46,7 +46,7 @@ public class Deck {
         return Deck.get(i).ISwhatsuit();
     }
 
-    public boolean facecard(int i) {
+    public boolean cardface(int i) {
         //returns true if the card is a face card, otherwise returns false
         return Deck.get(i).IsfaceCard();
     }

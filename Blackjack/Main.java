@@ -14,6 +14,8 @@ public class Main {
         //this is for testing
         for (int i = 0; i <52; i++) {
             System.out.println(newDeck.getcardnumber(i));
+            System.out.println(newDeck.getcardsuit(i));
+            System.out.println(newDeck.cardface(i));
         }
         
 
