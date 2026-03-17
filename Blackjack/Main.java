@@ -12,15 +12,34 @@ public class Main {
         newDeck = new Deck();
 
         //this is for testing
-        for (int i = 0; i <52; i++) {
-            System.out.println(newDeck.getcardnumber(i));
-            System.out.println(newDeck.getcardsuit(i));
-            System.out.println(newDeck.cardface(i));
-        }
-        
+        // for (int i = 0; i <52; i++) {
+
+        //     System.out.println(newDeck.getcardnumber(i) + "    " + newDeck.getcardface(i) + " of " + newDeck.getcardsuit(i));
+        // }
+        printshuffleprint();
 
 
 
     }
-    //game 
+
+
+
+    public static void printshuffleprint() {
+        //prints deck, shuffles and then prints again, for testing purposes
+        for (int i = 0; i <52; i++) {
+            System.out.println(newDeck.getcardnumber(i) + "    " + newDeck.getcardface(i) + " of " + newDeck.getcardsuit(i));
+        }
+
+        newDeck.shuffleDeck();
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+
+
+        for (int i = 0; i <52; i++) {
+            System.out.println(newDeck.getcardnumber(i) + "    " + newDeck.getcardface(i) + " of " + newDeck.getcardsuit(i));
+        }
+    }
+
 } 

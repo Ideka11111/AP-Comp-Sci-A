@@ -3,6 +3,7 @@ package Blackjack;
 public class card {
     private String suit;
     private int number;
+    private String cardFace;
     private boolean face;
 
     //you have 52 cards in a deck, choose one randomely but not too random because counting cards exists
@@ -10,16 +11,16 @@ public class card {
 
     //constructor for making each card
     //each card has a suit and a number varible attatched to it
-    public card(String Suit, int Number) {
+    public card(String Suit, int Number, String face) {
         suit = Suit;
         number = Number;
-
+        cardFace = face;
     }
     
 
     public boolean IsfaceCard() {
         //returns true if the specified card is a face card, returns false otherwise
-        if (number >= 10) {
+        if (number == 10 || number == 1) {
             face = true;
         }
         else {
@@ -27,6 +28,11 @@ public class card {
         }
 
         return face;
+    }
+
+    public String Cardface() {
+
+    return cardFace;
     }
 
     public String ISwhatsuit() {
@@ -39,5 +45,5 @@ public class card {
         return number;
     }
 
-
+    
 }

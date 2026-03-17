@@ -6,7 +6,9 @@ import java.util.*;
 
 public class Deck {
     private String [] suits = {"Hearts","Diamonds","Clubs","Spades"};
-    private int [] numbers = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+    private int [] numbers = {1,2,3,4,5,6,7,8,9,10,10,10,10};
+                            //1,2,3,4,5,6,7,8,9,10,11,12,13
+    private String [] face = {"ace","2","3","4","5","6","7","8","9","10","jack","queen","king"};
 
     //ArrayList<Type> arrayListName = new ArrayList<Type>();
     //List<Object> stuff = new ArrayList<Object>();
@@ -22,7 +24,7 @@ public class Deck {
             //looping through numbers (1-13) [0-12] 
             for (int n = 0; n < 13; n++) {
                 //
-                Deck.add(new card(suits[s],numbers[n]));
+                Deck.add(new card(suits[s],numbers[n],face[n]));
             }
         }
 
@@ -46,8 +48,13 @@ public class Deck {
         return Deck.get(i).ISwhatsuit();
     }
 
-    public boolean cardface(int i) {
-        //returns true if the card is a face card, otherwise returns false
+    public String getcardface(int i) {
+        //returns the face of the card
+        return Deck.get(i).Cardface();
+    }
+
+    public boolean isFaceCard(int i) {
+        //returns true if card is face card, returns false otherwise
         return Deck.get(i).IsfaceCard();
     }
 }
