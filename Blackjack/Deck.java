@@ -14,8 +14,6 @@ public class Deck {
     //List<Object> stuff = new ArrayList<Object>();
     private List<card> Deck;
 
-
-
     public Deck() {
         Deck = new ArrayList<card> ();
         //creates a deck in NDO (New Deck Order) 
@@ -47,6 +45,27 @@ public class Deck {
         String face = getcardface(0);
         int Number = getcardnumber(0);
         Deck.remove(0);
+        
+        //return a new card obj created with the other ones parameters to the players hand
+        return new card(Suit, Number, face);
+    }
+
+    public card TopCard(String player) {
+        //removes the top card in the deck from the list, and adds it to the players hand
+        //records the number, face, and suit of the card to make a new card obj 
+        String Suit = getcardsuit(0);
+        String face = getcardface(0);
+        int Number = getcardnumber(0);
+        Deck.remove(0);
+        //print out which card the player drew
+        if (player.equals("Dealer")) {
+            System.out.println("");
+            System.out.println("The Dealer drew a " + face + " of " + Suit);
+        }
+        else {
+            System.out.println("");
+            System.out.println(player + " drew a " + face + " of " + Suit);
+        }
         //return a new card obj created with the other ones parameters to the players hand
         return new card(Suit, Number, face);
     }

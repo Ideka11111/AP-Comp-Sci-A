@@ -16,21 +16,23 @@ public class player {
 
     }
 
+    public boolean checkBust() {
+            // System.out.println(sumofCards());
+            if (sumofCards() > 21) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
     public void addCard(card Card) {
         //adds a card to the player's hand
         Hand.add(Card);
     }
 
-    public boolean checkBust() {
-        if (sumofCards() > 21) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-
     public int sumofCards() {
+        sum = 0;
         //returns the sum of the cards in the hand
         for (int i=0; i < Hand.size(); i++) {
             sum += Hand.get(i).ISwhatnumber();
